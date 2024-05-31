@@ -17,6 +17,7 @@ git clone https://github.com/Diegomonfort/mimic_front_end_test
 
 ### Install dependencies
 cd mimic_
+
 npm install
 
 ### Set up Apollo Client
