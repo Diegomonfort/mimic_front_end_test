@@ -1,7 +1,4 @@
-# Mimic DeFi Workflow Visualization Tool
-
-## Overview
-This project is an interactive visualization tool for displaying workflows in the Mimic DeFi ecosystem. It allows users to query specific workflows and visualize how their tasks are connected to each other. The tool is built using React for the frontend and utilizes Apollo Client for fetching data from the Mimic GraphQL endpoint.
+# Mimic Front End Test by Diego Monfort
 
 ## Features
 - Display workflows with their associated tasks
@@ -16,3 +13,16 @@ To install and run the project locally, follow these steps:
 - Node.js installed on your machine
 
 ### Clone the repository
+git clone https://github.com/Diegomonfort/mimic_front_end_test
+
+### Install dependencies
+cd mimic_
+npm install
+
+### Set up Apollo Client
+1. Install Apollo Client dependencies:
+   npm install @apollo/client graphql
+2. Set up Apollo Client in your application. You can use the provided `client.js` file or configure Apollo Client as needed for your project.
+
+### Run the application
+npm start
