@@ -19,24 +19,17 @@ function VerticalStepper({ onStepSelect }) {
   };
 
   return (
-    // CONTAINER FOR THE VERTICAL STEPPER, ALIGNING ITEMS TO THE START
+    // CONTAINER FOR THE VERTICAL STEPPER
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', marginTop: '30px' }}>
       {steps.map((step, index) => (
         // EACH STEP IN THE STEPPER
-        <div
-          key={index}
-          onClick={() => handleStepClick(index)} // HANDLE CLICK EVENT ON STEP
-          style={{ display: 'flex', alignItems: 'center', marginBottom: '20px', cursor: 'pointer' }} // STEP STYLE
+        <div key={index} onClick={() => handleStepClick(index)} // HANDLE CLICK EVENT ON STEP
+          style={{ display: 'flex', alignItems: 'center', marginBottom: '20px', cursor: 'pointer' }}
         >
           <div style={{ position: 'relative', display: 'flex', alignItems: 'center' }}>
             <div
-              style={{
-                width: '24px',
-                height: '24px',
-                borderRadius: '50%',
-                backgroundColor: index === activeStep ? '#6F5CE6' : '#282c34', 
-                border: `2px solid ${index === activeStep ? '#6F5CE6' : '#D4D4D4'}`,
-                color: index === activeStep ? 'white' : '#D4D4D4',
+              style={{ width: '24px', height: '24px',
+                borderRadius: '50%', backgroundColor: index === activeStep ? '#6F5CE6' : '#282c34', border: `2px solid ${index === activeStep ? '#6F5CE6' : '#D4D4D4'}`, color: index === activeStep ? 'white' : '#D4D4D4',
               }}
             ></div>
             {index < steps.length - 1 && (
