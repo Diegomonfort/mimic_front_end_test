@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="icon" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+   
+    <title>Mimic l Diego Monfort</title>
+  </head>
+  <body>
+    <div id="loader"></div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <script>
+
+      // LOGO ANIMATION
+
+      var animation = lottie.loadAnimation({
+            container: document.getElementById('loader'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'src/components/logoAnimation.json' 
+          });
+
+          window.addEventListener('load', function() {
+            setTimeout(function() {
+              document.getElementById('loader').style.display = 'none';
+              document.getElementById('root').style.display = 'block';
+              document.body.style.overflow = 'auto'; 
+            }, 4000); 
+          });
+
+
+
+    </script>
+
+  </body>
+</html>
